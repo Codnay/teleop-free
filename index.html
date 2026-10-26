@@ -125,6 +125,40 @@
   </section>
 
   <section>
+    <h2>Works in sim, fails on the real robot</h2>
+    <p class="note">The same policy on real trials where it fails. In the twin it completes these tasks, but on the
+    real robot the grasp slips or misses.</p>
+
+    <div class="task">
+      <h3>Pick the screwdriver</h3>
+      <div class="pair">
+        <figure>
+          <video src="videos/real_fail_pick_screwdriver.mp4" poster="videos/real_fail_pick_screwdriver.jpg" autoplay muted loop playsinline preload="metadata"></video>
+          <figcaption><b>Real, fails:</b> the gripper reaches the handle, but the screwdriver slips away and the gripper comes back empty</figcaption>
+        </figure>
+        <figure>
+          <video src="videos/sim_pick_screwdriver.mp4" poster="videos/sim_pick_screwdriver.jpg" autoplay muted loop playsinline preload="metadata"></video>
+          <figcaption><b>Sim, succeeds</b> on a held-out layout</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="task">
+      <h3>Pick the screw</h3>
+      <div class="pair">
+        <figure>
+          <video src="videos/real_fail_pick_screw.mp4" poster="videos/real_fail_pick_screw.jpg" autoplay muted loop playsinline preload="metadata"></video>
+          <figcaption><b>Real, fails:</b> the gripper lands beside the screw and never gets it between its jaws</figcaption>
+        </figure>
+        <figure>
+          <video src="videos/sim_pick_screw.mp4" poster="videos/sim_pick_screw.jpg" autoplay muted loop playsinline preload="metadata"></video>
+          <figcaption><b>Sim, succeeds</b> on a held-out layout</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <h2>BibTeX</h2>
 <pre>@misc{gupta2026teleopfree,
   title  = {Teleop-Free Robot Learning},
